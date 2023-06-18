@@ -1,7 +1,7 @@
-import cProfile
+# import cProfile
 
 def fun():
-    dic = {0: 2, 1: 3, 2: 4, 3: 5, 6: 8, 7:9, 8: 10, 10:12, 11:13, 4:15,34:55,35:44,44:57,58:64,57:67,5:14,67:71,71:85}
+    dic = {0: 2, 1: 3, 2: 4, 3: 5, 6: 8, 7:9, 8: 10, 10:12, 11:13, 4:15,34:55,35:44,44:57,58:64,57:67,5:14,67:71,71:85,15:65}
     lis=[[x,y] for x,y in dic.items()]
     for i in lis:
         for j in lis:
@@ -14,8 +14,15 @@ def fun():
         if second_element not in seen_second_elements:
             seen_second_elements[second_element] = True
             new_list.append(element)
-    print(new_list)
+    return new_list
+x=fun()
+# print(x)
+# finaldic={x:y for x,y in x}
+# print(finaldic)
 
-cProfile.run('fun()')
+
+
+
+# cProfile.run('fun()')
 
 

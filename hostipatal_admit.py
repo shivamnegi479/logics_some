@@ -23,7 +23,7 @@ def occrence(List):
     return num
 print(occrence(total))
 
-# print(total.count(occrence(total)))
+print(total.count(occrence(total)))
 # print(total.count(2))
 # print(total.count(3))
 # print(max(total,key=total.count))
